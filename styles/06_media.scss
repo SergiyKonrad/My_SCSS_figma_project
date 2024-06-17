@@ -208,6 +208,32 @@
     }
   }
 
+  // ---
+
+  // .accordion-body {
+  //   p {
+  //     max-width: 80% !important;
+  //   }
+  // }
+
+  .contact-form-container {
+    flex-direction: column;
+
+    .map-image {
+      order: -1;
+      padding-left: 0 !important;
+      margin-top: 0 !important;
+      margin-bottom: $base-spacing;
+      max-width: 100% !important;
+    }
+
+    .contact-form {
+      order: 1;
+      // width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
   //  footer -----
 
   .footer {
