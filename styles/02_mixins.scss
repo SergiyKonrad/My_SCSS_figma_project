@@ -1,0 +1,25 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin responsive-font-size($size) {
+  font-size: $size;
+
+  @media (max-width: 600px) {
+    font-size: $size * 0.8;
+  }
+
+  @media (max-width: 400px) {
+    font-size: $size * 0.6;
+  }
+}
+
+// Mixin for container
+@mixin container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $base-spacing;
+}

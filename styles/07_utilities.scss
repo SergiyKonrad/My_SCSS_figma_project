@@ -1,0 +1,14 @@
+@use 'sass:math';
+
+.mt-1 {
+  margin-top: math.div($base-spacing, 2);
+}
+.mt-2 {
+  margin-top: $base-spacing;
+}
+.mb-1 {
+  margin-bottom: math.div($base-spacing, 2);
+}
+.mb-2 {
+  margin-bottom: $base-spacing;
+}

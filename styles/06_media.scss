@@ -1,0 +1,220 @@
+// Media queries for responsive design
+
+// Desktops
+@media (max-width: 1250px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content,
+  .footer-container,
+  .partners-list,
+  .team-members,
+  .section-content,
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+  }
+
+  .section-2 .section-content {
+    flex-direction: column-reverse;
+  }
+
+  .hero-text,
+  .hero-image,
+  .section-text,
+  .section-image,
+  .footer-content,
+  .social-links {
+    max-width: 80%;
+    margin: 0 auto $base-spacing;
+  }
+
+  .section h2 {
+    font-size: $section-title-font-size;
+  }
+
+  .section p {
+    font-size: $base-font-size;
+  }
+
+  .carousel-inner {
+    flex-direction: row;
+  }
+
+  .carousel-item {
+    width: 25%;
+  }
+
+  .team-member {
+    max-width: 300px;
+    width: 100%;
+    margin: $base-spacing auto;
+  }
+}
+
+// laptops
+@media (max-width: 1024px) {
+  .hero-text,
+  .hero-image,
+  .section-text,
+  .section-image,
+  .footer-content,
+  .social-links {
+    max-width: 90%;
+    margin: 0 auto $base-spacing;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+  }
+
+  .section-2 .section-content {
+    flex-direction: column-reverse;
+  }
+
+  .carousel-item {
+    width: 33.33%;
+  }
+}
+
+// Tablets
+@media (max-width: 768px) {
+  .section-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .section-text,
+    .section-image {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+
+  .hero-text,
+  .hero-image,
+  .section-text,
+  .section-image,
+  .footer-content,
+  .social-links {
+    max-width: 100%;
+    margin: 0 auto $base-spacing;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+  }
+
+  .section-2 .section-content {
+    flex-direction: column-reverse;
+  }
+
+  .carousel-item {
+    width: 50%;
+  }
+}
+
+// Contact Us
+
+.contact-form {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .map-image {
+    padding-left: 0;
+    margin-top: $base-spacing;
+  }
+}
+
+// Mobile devices
+@media (max-width: 576px) {
+  .hero-text,
+  .hero-image,
+  .section-text,
+  .section-image,
+  .social-links {
+    max-width: 100% !important;
+    margin: 0 auto $base-spacing;
+    text-align: left;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+  }
+
+  .section-2 .section-content {
+    flex-direction: column-reverse;
+  }
+
+  .partners-text,
+  .team-text,
+  .accordion-body p {
+    max-width: 80% !important;
+  }
+
+  .partners-list,
+  .carousel-inner,
+  .section-content,
+  .section-image,
+  .hero-image,
+  .team-member .image-container {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .team-member {
+    // width: 350px !important;
+    margin: $base-spacing auto;
+    max-width: 350px !important;
+  }
+
+  .team-member img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  // !-----------
+
+  .team-info {
+    text-align: left;
+
+    h4 {
+      font-size: 1.2em !important;
+    }
+
+    p {
+      font-size: 1em !important;
+    }
+  }
+
+  //  footer -----
+
+  .footer {
+    padding: $small-spacing;
+
+    .footer-container {
+      margin-top: $large-spacing;
+    }
+  }
+}

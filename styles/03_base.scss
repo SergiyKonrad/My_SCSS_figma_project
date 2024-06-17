@@ -1,0 +1,44 @@
+//  Global styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// -----
+:root {
+  --transition-duration: 0.5s;
+  --transition-ease: ease-in-out;
+}
+
+// Base styles
+body {
+  font-family: $base-font;
+  font-size: $base-font-size;
+  color: $text-color;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+h3 {
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+}

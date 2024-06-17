@@ -1,0 +1,191 @@
+// Layout styles
+
+.header {
+  background-color: $header-bg-color;
+  padding: $large-spacing 0;
+
+  .header-content {
+    font-family: $second-font;
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-family: $base-font;
+      margin-bottom: $small-spacing;
+
+      img {
+        max-width: 120px;
+        height: auto;
+      }
+    }
+  }
+}
+
+// custom Bootstrap nav
+
+.custom-navbar .nav-link {
+  font-family: $second-font;
+  color: #fff;
+  margin-right: 3em;
+}
+
+.custom-navbar .nav-link:hover {
+  color: rgb(254, 254, 88);
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  color: $background-color;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+// Contact Us
+
+// Custom accordion Bootstrap styles
+.accordion-button {
+  background-color: $primary-color;
+  color: $link-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: $base-spacing;
+  font-size: 0.55em;
+
+  &:focus {
+    box-shadow: none;
+  }
+  &:not(.collapsed) {
+    color: $background-color;
+    background-color: $primary-color;
+  }
+  span {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+.accordion-body {
+  padding: $base-spacing;
+  background-color: $background-color;
+
+  h2 {
+    font-family: $base-font;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: $base-spacing;
+    margin-top: 1.5em;
+    text-align: center;
+  }
+
+  p {
+    font-family: $second-font;
+    text-align: center;
+    max-width: 50%;
+    margin: 0 auto $large-spacing; // Center the element with margin
+
+    margin-bottom: $large-spacing;
+  }
+
+  // --- About Us section custom styles
+
+  .contact-form-container {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5em;
+    margin-bottom: $large-spacing;
+
+    .contact-form {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      max-width: 50%;
+
+      label {
+        margin-bottom: $small-spacing;
+        text-align: left;
+        width: 100%;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: $small-spacing;
+        margin-bottom: $base-spacing;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+      }
+
+      button {
+        width: 100%;
+        background-color: $button-color;
+        color: #fff;
+        padding: $small-spacing $base-spacing;
+        border: none;
+        border-radius: $border-radius;
+        cursor: pointer;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+
+    // Map ---
+
+    .map-image {
+      flex: 1;
+      padding-left: $base-spacing;
+
+      max-width: 50%;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: $border-radius;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+// Footer
+
+.footer {
+  background-color: $footer-bg-color;
+  color: #fff;
+  padding: $large-spacing 0;
+
+  .footer-container {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-content {
+    font-family: $second-font;
+    text-align: right;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+
+    a {
+      margin: 0 $small-spacing;
+    }
+  }
+}

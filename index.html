@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Final SCSS Project</title>
+</head>
+
+<body>
+  <!-- <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="header-content"> !!! custom style
+        <a class="navbar-brand logo" href="#"> -->
+
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container ">
+        <a class="navbar-brand logo" href="#">
+
+
+          <img src="./images/Frame-4StartLogo.png" alt="Start Logo" style="max-width: 120px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav custom-navbar ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h3>WELCOME</h3>
+        <h2>Lorem ipsum dolor sit amet consectetur. </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Rerum, aperiam culpa ipsum hic ipsam esse magni
+          Impedit, unde earum numquam repudiandae ab et quo suscipit excepturi repellat quisquam?</p>
+        <button class="explore-btn" aria-label="Explore">Explore</button>
+      </div>
+      <div class="hero-image">
+        <img src="./images/Group.png" alt="Hero Image">
+      </div>
+    </div>
+  </section>
+
+  <section class="partners">
+    <h3 class="partners-title">PARTNERS</h3>
+    <div class="partners-text">
+      <h2>Lorem Ipsum Dolor</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Rerum, aperiam culpa ipsum hic ipsam esse magni.</p>
+    </div>
+    <div class="partners-list">
+      <img src="./images/Google_img.png" alt="Google">
+      <img src="./images/Microsoft_img.png" alt="Microsoft">
+      <img src="./images/Airbnb_img.png" alt="Airbnb">
+      <img src="./images/Facebook_img.png" alt="Facebook">
+      <img src="./images/Spotify_img.png" alt="Spotify">
+    </div>
+    <button class="learn-more-btn" aria-label="Learn More">Learn More</button>
+  </section>
+
+  <!-- section 1 -->
+  <section class="section section-1">
+    <div class="section-content">
+      <div class="section-image">
+        <img src="./images/Group2.png" alt="Illustration">
+      </div>
+      <div class="section-text">
+        <h2>Lorem Ipsum Dolor sit amet consectetur</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.Suscipit nemo hic quos,dolor aperiam nobis cum
+          est eos ipsum, delectus iste.</p>
+        <button class="learn-more-btn" aria-label="Learn More">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- section2 -->
+  <section class="section section-2">
+    <div class="section-content">
+      <div class="section-text">
+        <h2>Lorem Ipsum Dolor sit amet consectetur</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.Suscipit nemo hic quos,dolor aperiam nobis cum
+          est eos ipsum, delectus iste.</p>
+        <button class="learn-more-btn" aria-label="Learn More">Learn More</button>
+      </div>
+      <div class="section-image">
+        <img src="./images/Group3.png" alt="Illustration">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Team Our Talents -->
+  <section class="team">
+    <h3 class="team-title">TEAM</h3>
+    <div class="team-text">
+      <h2>Our Talents</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, dolor aperiam nobis cum.</p>
+    </div>
+
+    <!-- Custom Carousel -->
+    <div class="carousel">
+      <button class="carousel-control-prev" onclick="prevSlide()" aria-label="Previous Slide">&#10094;</button>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <div class="team-member">
+            <div class="image-container">
+              <img src="./images/astronaut-space-flowers_edited.jpg" alt="Team Member" class="img-fluid">
+            </div>
+            <div class="team-info">
+              <h4>Peg Legge</h4>
+              <p>CEO</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="team-member">
+            <div class="image-container">
+              <img src="./images/astronaut-milky-way-edited.jpg" alt="Team Member" class="img-fluid">
+            </div>
+            <div class="team-info">
+              <h4>Richard Guerra</h4>
+              <p>CTO</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="team-member">
+            <div class="image-container">
+              <img src="./images/astronaut_edited.jpg" alt="Team Member" class="img-fluid">
+            </div>
+            <div class="team-info">
+              <h4>Alexandra Stolz</h4>
+              <p>DESIGNER</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="team-member">
+            <div class="image-container">
+              <img src="./images/door-leading-magical-world_edited.jpg" alt="Team Member" class="img-fluid">
+            </div>
+            <div class="team-info">
+              <h4>Janet Bray</h4>
+              <p>DESIGNER</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="team-member">
+            <div class="image-container">
+              <img src="./images/dragons-fantasy.jpg" alt="Team Member" class="img-fluid">
+            </div>
+            <div class="team-info">
+              <h4>John Dow</h4>
+              <p>DEVELOPER</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="team-member">
+            <div class="image-container">
+              <img src="./images/futuristic-cat.jpg" alt="Team Member" class="img-fluid">
+            </div>
+            <div class="team-info">
+              <h4>Buba</h4>
+              <p>CONSULTANT</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="team-member">
+            <div class="image-container">
+              <img src="./images/great-futuristic-cat.jpg" alt="Team Member" class="img-fluid">
+            </div>
+            <div class="team-info">
+              <h4>Misty</h4>
+              <p>CONSULTANT'S CONSULTANT</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="team-member">
+            <div class="image-container">
+              <img src="./images/indian2.jpg" alt="Team Member" class="img-fluid">
+            </div>
+            <div class="team-info">
+              <h4>Chingachgook</h4>
+              <p>GHIEF DEVELOPER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-next" onclick="nextSlide()" aria-label="Next Slide">&#10095;</button>
+    </div>
+
+    <button class="learn-more-btn" aria-label="View Team">View Team</button>
+  </section>
+
+  <!-- Contact Us -->
+  <!-- kind of  Accordion Block JS -->
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          <span>Contact Us</span>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <h2>Contact Us</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <div class="contact-form-container">
+
+            <div class="contact-form">
+              <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+
+            <div class="map-image">
+              <img src="./images/google-map.png" alt="Google Map" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="social-links">
+        <a href="#"><img src="./images/Group-33Facebook_footer_logo.png" alt="Facebook"></a>
+        <a href="#"><img src="./images/Group-34Some_footer_logo.png" alt="Another Social"></a>
+        <a href="#"><img src="./images/Group-35Twitterfooter__logo.png" alt="Twitter"></a>
+        <a href="#"><img src="./images/Group-36.P_footer_logo.png" alt="Pinterest"></a>
+        <a href="#"><img src="./images/Group-37Tik_footer_logo.png" alt="TikTok"></a>
+        <a href="#"><img src="./images/Group-38WhatsUp_lfooter_ogo.png" alt="WhatsApp"></a>
+        <a href="#"><img src="./images/Group-39YpuTube_footer_logo.png" alt="YouTube"></a>
+      </div>
+      <div class="footer-content">
+        <p>&copy; Start, 2024. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="index.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
