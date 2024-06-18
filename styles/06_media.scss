@@ -167,10 +167,8 @@
   .section-image,
   .hero-image,
   .team-member .image-container {
+    @include flex-center;
     flex-direction: column;
-    align-items: center;
-    display: flex;
-    justify-content: center;
     width: 100%;
   }
 
@@ -187,10 +185,7 @@
   }
 
   .carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    @include flex-center;
     width: 100%;
   }
 

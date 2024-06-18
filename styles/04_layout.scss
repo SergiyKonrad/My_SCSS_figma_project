@@ -54,9 +54,7 @@
 .accordion-button {
   background-color: $primary-color;
   color: $link-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   text-align: center;
   padding: $base-spacing;
   font-size: 0.55em;

@@ -304,7 +304,7 @@ h3 {
 }
 
 .section {
-  padding: 32px 0;
+  padding: 16px 0;
 }
 .section .section-content {
   width: 100%;
@@ -341,7 +341,7 @@ h3 {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 .section .section-content .section-text .learn-more-btn:hover {
   color: #50b784;
@@ -373,18 +373,18 @@ h3 {
   margin-bottom: 32px;
 }
 .team .carousel {
-  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: relative;
   overflow: hidden;
   max-width: 1200px;
   margin: 0 auto;
 }
 .team .carousel .carousel-inner {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 .team .carousel .carousel-item {
@@ -602,10 +602,10 @@ h3 {
   .section-image,
   .hero-image,
   .team-member .image-container {
-    flex-direction: column;
-    align-items: center;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
   }
   .team-member {

@@ -81,9 +81,7 @@
   }
 
   .partners-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     flex-wrap: wrap;
     gap: $base-spacing;
     margin-bottom: $base-spacing;
@@ -115,7 +113,7 @@
 // Sections
 
 .section {
-  padding: $large-spacing 0;
+  padding: $base-spacing 0;
 
   .section-content {
     @include container;
@@ -154,7 +152,7 @@
         border-radius: 4px;
         cursor: pointer;
         margin-top: $base-spacing;
-        margin-bottom: $large-spacing;
+        margin-bottom: $base-spacing;
 
         &:hover {
           color: darken($primary-color, 10%);
@@ -164,7 +162,7 @@
   }
 }
 
-// Our Talents
+// Our Talents TEAM
 
 .team {
   padding: 0;
@@ -199,18 +197,14 @@
   // aka CAROUSEL
 
   .carousel {
+    @include flex-center;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
     max-width: 1200px;
     margin: 0 auto;
 
     .carousel-inner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex-center;
       overflow: hidden;
     }
 
